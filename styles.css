@@ -47,7 +47,7 @@ nav ul li a:hover {
 /* HERO */
 
 .hero {
-    min-height: 70vh;
+    min-height: 55vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -359,4 +359,51 @@ footer {
 .footer-copy {
     font-size: 0.8rem;
     color: #555;
+}
+
+/* RESUME PAGE */
+
+.resume-section {
+    max-width: 900px;
+    margin: 48px auto;
+    padding: 0 40px;
+}
+
+.resume-actions {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.resume-btn {
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    background-color: #e87722;
+    color: white;
+}
+
+.resume-btn:hover {
+    background-color: #c96a10;
+}
+
+.resume-btn.secondary {
+    background-color: transparent;
+    border: 2px solid #e87722;
+    color: #e87722;
+}
+
+.resume-btn.secondary:hover {
+    background-color: #e87722;
+    color: white;
+}
+
+.resume-embed iframe {
+    width: 100%;
+    height: 800px;
+    border: none;
+    border-radius: 8px;
 }
