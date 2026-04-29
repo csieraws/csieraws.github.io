@@ -115,3 +115,83 @@ nav ul li a:hover {
     font-size: 0.9rem;
     color: #aaaaaa;
 }
+
+/* PROJECT PAGE */
+
+.project-page {
+    max-width: 1100px;
+    margin: 48px auto;
+    padding: 0 40px;
+}
+
+.project-hero-img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.project-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.project-description h2 {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    margin-bottom: 16px;
+}
+
+.project-description p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #aaaaaa;
+    margin-bottom: 16px;
+}
+
+.project-details {
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-details h2 {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    margin-bottom: 16px;
+}
+
+.project-details ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project-details ul li {
+    font-size: 0.95rem;
+    color: #aaaaaa;
+    line-height: 1.5;
+}
+
+.back-link {
+    max-width: 1100px;
+    margin: 0 auto 48px auto;
+    padding: 0 40px;
+}
+
+.back-link a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+    color: #e87722;
+}
