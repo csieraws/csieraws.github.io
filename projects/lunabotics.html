@@ -24,7 +24,19 @@
 
     <section class="project-page">
 
-        <img src="../images/lunabotics.jpg" alt="Lunabotics Robot" class="project-hero-img">
+        <div class="carousel">
+        <button class="carousel-btn left" onclick="moveSlide(-1)">&#8249;</button>
+
+        <div class="carousel-track-wrapper">
+            <div class="carousel-track" id="carouselTrack">
+                <img src="../images/lunabotics1.jpg" alt="Lunabotics 1">
+                <img src="../images/lunabotics2.jpg" alt="Lunabotics 2">
+                <img src="../images/lunabotics3.jpg" alt="Lunabotics 3">
+            </div>
+        </div>
+
+        <button class="carousel-btn right" onclick="moveSlide(1)">&#8250;</button>
+        </div>
 
         <div class="project-body">
 
@@ -48,8 +60,26 @@
     </section>
 
     <div class="back-link">
-        <a href="../index.html">← Back to Portfolio</a>
+        <a href="../index.html">← Back</a>
     </div>
+
+    <script>
+    const track = document.getElementById('carouselTrack');
+    let current = 0;
+    const total = track.children.length;
+    let autoplay = setInterval(() => moveSlide(1), 4000);
+
+    function moveSlide(direction) {
+        current = (current + direction + total) % total;
+        track.style.transform = `translateX(-${current * 100}%)`;
+        resetAutoplay();
+    }
+
+    function resetAutoplay() {
+        clearInterval(autoplay);
+        autoplay = setInterval(() => moveSlide(1), 4000);
+    }
+    </script>
 
 </body>
 </html>
