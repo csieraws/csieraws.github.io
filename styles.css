@@ -47,7 +47,7 @@ nav ul li a:hover {
 /* HERO */
 
 .hero {
-    min-height: 92vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -286,4 +286,28 @@ nav ul li a:hover {
 .carousel-btn:hover {
     background-color: #e87722;
     color: white;
+}
+
+/* PROJECT PAGE HERO */
+
+.project-hero {
+    background-color: #1a1a1a;
+    border-bottom: 3px solid #e87722;
+    padding: 40px 40px 32px 40px;
+    max-width: 100%;
+}
+
+.project-hero-category {
+    font-size: 0.85rem;
+    color: #e87722;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.project-hero-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #f0f0f0;
+    letter-spacing: 1px;
 }
