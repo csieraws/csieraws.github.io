@@ -311,3 +311,52 @@ nav ul li a:hover {
     color: #f0f0f0;
     letter-spacing: 1px;
 }
+
+/* FOOTER */
+
+footer {
+    background-color: #1a1a1a;
+    border-top: 3px solid #e87722;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.footer-links a {
+    color: #aaaaaa;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #e87722;
+}
+
+.footer-links span {
+    color: #444;
+}
+
+.footer-copy {
+    font-size: 0.8rem;
+    color: #555;
+}
