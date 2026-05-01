@@ -50,7 +50,7 @@ nav ul li a:hover {
 /* HERO */
 
 .hero {
-    min-height: 45vh;
+    min-height: 25vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,10 +75,11 @@ nav ul li a:hover {
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: bold;
     color: #f0f0f0;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
     opacity: 0;
     transform: translateY(30px);
     animation: fadeSlideUp 1s ease forwards;
