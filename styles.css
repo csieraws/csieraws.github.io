@@ -47,6 +47,22 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
+nav .back-link {
+    display: flex;
+    align-items: center;
+}
+
+nav .back-link a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+nav .back-link a:hover {
+    color: #e87722;
+}
+
 /* HERO */
 
 .hero {
