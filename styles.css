@@ -78,7 +78,7 @@ nav ul li a:hover {
     font-size: 4.5rem;
     font-weight: bold;
     color: #f0f0f0;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
     text-transform: uppercase;
     opacity: 0;
     transform: translateY(30px);
@@ -90,7 +90,7 @@ nav ul li a:hover {
     font-size: 1.5rem;
     color: #aaaaaa;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    
     opacity: 0;
     transform: translateY(30px);
     animation: fadeSlideUp 1s ease forwards;
