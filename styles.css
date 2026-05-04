@@ -12,8 +12,8 @@ body {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     background-color: #1a1a1a;
     padding: 16px 40px;
@@ -23,16 +23,25 @@ nav {
     z-index: 1000;
 }
 
+nav .back-link {
+    grid-column: 1;
+    justify-self: start;
+}
+
+nav ul {
+    grid-column: 3;
+    justify-self: end;
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
 nav .nav-name {
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 24px;
 }
 
 nav ul li a {
