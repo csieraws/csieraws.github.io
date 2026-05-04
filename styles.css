@@ -139,6 +139,7 @@ nav .back-link a:hover {
         transform: translateY(0);
     }
 }
+
 /* PROJECT GRID */
 
 .projects-grid {
@@ -146,7 +147,7 @@ nav .back-link a:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     padding: 48px 40px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
