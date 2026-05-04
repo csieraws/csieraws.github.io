@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,7 @@
 
 <body>
 
-    <nav>       
+    <nav>
         <div class="nav-name"></div>
         <ul>
             <li><a href="../index.html">Portfolio</a></li>
@@ -25,26 +26,33 @@
     <section class="project-page">
 
         <div class="carousel">
-        <button class="carousel-btn left" onclick="moveSlide(-1)">&#8249;</button>
+            <button class="carousel-btn left" onclick="moveSlide(-1)">&#8249;</button>
 
-        <div class="carousel-track-wrapper">
-            <div class="carousel-track" id="carouselTrack">
-                <img src="../images/lunabotics.jpg" alt="Lunabotics">
-                <img src="../images/lunabotics1.png" alt="Lunabotics 1">
-                <img src="../images/lunabotics2.jpg" alt="Lunabotics 2">
-                <img src="../images/lunabotics3.jpg" alt="Lunabotics 3">
+            <div class="carousel-track-wrapper">
+                <div class="carousel-track" id="carouselTrack">
+                    <img src="../images/lunabotics.jpg" alt="Lunabotics">
+                    <img src="../images/lunabotics1.png" alt="Lunabotics 1">
+                    <img src="../images/lunabotics2.jpg" alt="Lunabotics 2">
+                    <img src="../images/lunabotics3.jpg" alt="Lunabotics 3">
+                </div>
             </div>
-        </div>
 
-        <button class="carousel-btn right" onclick="moveSlide(1)">&#8250;</button>
+            <button class="carousel-btn right" onclick="moveSlide(1)">&#8250;</button>
         </div>
 
         <div class="project-body">
 
             <div class="project-description">
                 <h2>Overview</h2>
-                <p>Write a few paragraphs here describing the project. What was the goal? What problem were you solving? What was your role on the team? This is where you tell the story of the project in your own words.</p>
-                <p>Add a second paragraph here going deeper — what were the key challenges you ran into and how did you solve them? Recruiters love seeing your thought process, not just the outcome.</p>
+                <p> NASA Lunabotics is a robotics competition in which college teams design, program, and test a moon rover to futher moon habitation technology.
+                    The robot must be capable of navigation, excavation, and berm construction.
+                    The team represented the University of Tennessee in both the 2024 and 2025 NASA Lunabotics Competition, placing 15th of 35 teams in 2025.
+                    For the 2025-2026 school year, I served as the team's Mechanical Team Lead, involving leading the design process, prototyping, construction, and testing of the robot.
+                </p>
+                <p> In past years, the robot has had dificulty navigating the lunar regolith medium.
+                    This year, we completely overhauled the drivetrain, implementing a fully custom track system, which has performed measureably better during the testing phase.
+                
+                </p>
             </div>
 
             <div class="project-details">
@@ -56,7 +64,9 @@
                 </ul>
 
                 <div class="video-embed">
-                    <iframe src="https://www.youtube.com/embed/MWxILtt3ig4?start=163" title="NASA Lunabotics" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    <iframe src="https://www.youtube.com/embed/MWxILtt3ig4?start=163" title="NASA Lunabotics"
+                        allowfullscreen
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                 </div>
             </div>
 
@@ -69,22 +79,23 @@
     </div>
 
     <script>
-    const track = document.getElementById('carouselTrack');
-    let current = 0;
-    const total = track.children.length;
-    let autoplay = setInterval(() => moveSlide(1), 4000);
+        const track = document.getElementById('carouselTrack');
+        let current = 0;
+        const total = track.children.length;
+        let autoplay = setInterval(() => moveSlide(1), 4000);
 
-    function moveSlide(direction) {
-        current = (current + direction + total) % total;
-        track.style.transform = `translateX(-${current * 100}%)`;
-        resetAutoplay();
-    }
+        function moveSlide(direction) {
+            current = (current + direction + total) % total;
+            track.style.transform = `translateX(-${current * 100}%)`;
+            resetAutoplay();
+        }
 
-    function resetAutoplay() {
-        clearInterval(autoplay);
-        autoplay = setInterval(() => moveSlide(1), 3000);
-    }
+        function resetAutoplay() {
+            clearInterval(autoplay);
+            autoplay = setInterval(() => moveSlide(1), 3000);
+        }
     </script>
 
 </body>
+
 </html>
