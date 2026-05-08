@@ -25,33 +25,22 @@
 
     <section class="project-page">
 
-        <div class="carousel">
-            <button class="carousel-btn left" onclick="moveSlide(-1)">&#8249;</button>
-
-            <div class="carousel-track-wrapper">
-                <div class="carousel-track" id="carouselTrack">
-                    <img src="../images/lunabotics.jpg" alt="Lunabotics">
-                    <img src="../images/lunabotics1.png" alt="Lunabotics 1">
-                    <img src="../images/lunabotics2.jpg" alt="Lunabotics 2">
-                    <img src="../images/lunabotics3.jpg" alt="Lunabotics 3">
-                </div>
-            </div>
-
-            <button class="carousel-btn right" onclick="moveSlide(1)">&#8250;</button>
+       <div class="static-image">
+            <img src="../images/roboarm.jpg" alt="Miniature Robotic Arm">
         </div>
 
         <div class="project-body">
 
             <div class="project-description">
                 <h2>Overview</h2>
-                <p> NASA Lunabotics is a robotics competition in which college teams design, program, and test a moon rover to futher moon habitation technology.
-                    The robot must be capable of navigation, excavation, and berm construction.
-                    The team represented the University of Tennessee in both the 2024 and 2025 NASA Lunabotics Competition, placing 15th of 35 teams in 2025.
-                    For the 2025-2026 school year, I served as the team's Mechanical Team Lead, involving leading the design process, prototyping, construction, and testing of the robot.
+                <p>This table-top miniature robotic arm was designed in Fusion 360 to be completely 3D-printable.
+                    It features 4 degrees of freedom, each powered by an SG90 servo motor, and all controlled by an ESP-32 microcontroller.
+                    The arm also requires no extra hardware or fasteners outside of what is supplied with the servo motors by embedding the servo horns into the arm links before securing them to the motor.
                 </p>
-                <p> In past years, the robot has had dificulty navigating the lunar regolith medium.
-                    This year, we completely overhauled the drivetrain, implementing a fully custom track system, which has performed measureably better during the testing phase.
-                    This robot weighs in at 57 kg and is capable of excavating and transporting 84 L of regolith within the alloted 15 minutes.
+                <p> The robot is powered by a USB-C connection and can be controlled through that connection serially, or controlled wirelessly through the ESP-32's Wi-Fi Access Point.
+                    Inverse kinematics calculations allow for x, y, z coordinates to be translated to servo angles.
+                    This robot, and the experience gained with servos and microcontrollers, served as the basis for some of my later robotics projects, such as the Remote Control Robot Vacuum.
+                    In the future, I would like to build a larger version with larger motors and gearboxes, capable of PID control and trajectory planning.
                 </p>
             </div>
 
@@ -59,8 +48,8 @@
                 <h2>Details</h2>
                 <ul>
                     <li><strong>Timeline:</strong> Spring 2025</li>
-                    <li><strong>Tools & Software:</strong> Autodesk Fusion 360</li>
-                    <li><strong>Skills:</strong> CAD, 3D Printing</li>
+                    <li><strong>Tools & Software:</strong> Autodesk Fusion 360, Arduino IDE</li>
+                    <li><strong>Skills:</strong> CAD, 3D Printing, Inverse Kinematics</li>
                 </ul>
             </div>
 
