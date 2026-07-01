@@ -12,7 +12,7 @@ body {
     background-color: #1e1e1e;
     color: #f0f0f0;
     background-image: 
-        linear-gradient(rgba(30, 30, 30, 0.98), rgba(30, 30, 30, 0.98)),
+        linear-gradient(rgba(30, 30, 30, 0.97), rgba(30, 30, 30, 0.97)),
         url('images/background.jpg');
     background-size: cover;
     background-position: center;
@@ -96,6 +96,7 @@ nav .back-link a:hover {
     text-align: center;
     padding: 60px 20px;
     background-color: #1a1a1a; /* Fallback color while the video loads */
+    border-bottom: 2px solid #e87722;
 }
 
 .hero-video {
