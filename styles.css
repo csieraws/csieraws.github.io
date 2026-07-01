@@ -11,6 +11,13 @@ body {
     font-family: 'DM Mono', monospace;
     background-color: #1e1e1e;
     color: #f0f0f0;
+    background-image: 
+        linear-gradient(rgba(30, 30, 30, 0.9), rgba(30, 30, 30, 0.9)),
+        url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 nav {
