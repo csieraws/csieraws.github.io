@@ -153,7 +153,7 @@ nav .back-link a:hover {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 36px;
     padding: 48px 40px;
     max-width: 1400px;
     margin: 0 auto;
