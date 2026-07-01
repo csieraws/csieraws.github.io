@@ -80,7 +80,7 @@ nav .back-link a:hover {
 /* HERO */
 
 .hero {
-    min-height: 25vh;
+    min-height: 32vh;
     display: flex;
     align-items: center;
     justify-content: center;
